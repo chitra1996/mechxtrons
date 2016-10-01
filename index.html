@@ -19,6 +19,7 @@ e-mail : chitrangna.pallavi.singh@gmail.com
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>mechxtrons</title>		
     	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     	<link rel="stylesheet" type="text/css" href="css/style.css">
     		<link  rel="stylesheet" href="css/bootstrap.css">
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -48,11 +49,38 @@ e-mail : chitrangna.pallavi.singh@gmail.com
 
 			<div class="tab" id="tab1">
 				<dl>
-					<li>Mechanical</li>
-					<li>Civil</li>
-					<li>Robotics</li>
+					<li><a href="#" class="active" data-subtabs="#subtab1">Mechanical</a></li>
+					<li><a href="#" data-subtabs="#subtab2">Civil</a></li>
+					<li><a href="#" data-subtabs="#subtab3">Robotics</a></li>
 				</dl>
 			</div>
+
+				<div class="subtab" id="subtab1">
+					Lorem11111 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+				<div class="subtab" id="subtab2">
+					Lorem2222 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+				<div class="subtab" id="subtab3">
+					Lorem3333 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
 
 			<div class="tab" id="tab2">
 				<p>Lorem22 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -76,6 +104,17 @@ e-mail : chitrangna.pallavi.singh@gmail.com
 		var tab = $(this).attr('data-tabs');
 		$(".tab").hide();
 		$(tab).show();
+		$("#subtab1").show();
+		});	
+	});
+
+	$(document).ready(function(){
+		$("#tab1 a").click(function(){
+		$('#tab1 a').removeClass('active');
+		$(this).addClass('active');
+		var subtab = $(this).attr('data-subtabs');
+		$(".subtab").hide();
+		$(subtab).show();
 		});	
 	});
 
