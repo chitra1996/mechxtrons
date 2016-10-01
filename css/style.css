@@ -65,3 +65,29 @@ header , nav , aside , section , article , footer {
 	padding-left: 5%;
 	float: right;
 }
+
+.tab {
+    height: 500px;
+    width: auto;
+    overflow: auto;
+    display: none;
+    background-color: #f8f8f8;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#tab1 dl {
+	width: 100%;
+	display: block;
+	margin-bottom: 0px !important;
+}
+
+#tab1 li {
+	text-decoration: none;
+	list-style: none;
+	width: 33%;
+	display: block;
+	float: left;
+	text-align: center;
+	border: 1px solid black;
+}
