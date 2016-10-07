@@ -1,0 +1,255 @@
+header , nav , aside , section , article , footer {
+    display: block;
+}
+
+.wrapper {
+	width: 100% !important;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+#header {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+
+#header #title {
+	font-size: 80px;
+	font-family: Quicksand;
+	color: #F7931E;
+	text-shadow: 2px 2px grey;
+	margin-top: 20px !important;
+	margin-bottom: 0px !important;
+	font-weight: normal;
+}
+
+#header #subtitle {
+	font-size: 40px;
+	font-family: Quicksand;
+	color: #000;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	font-weight: normal;
+}
+
+#content {
+	margin-top: 50px;
+}
+
+#college {
+	display: block;
+	margin-left: : 0px;
+	margin-right: 0px; 
+	padding-right: 5%;
+	padding-left: 30%;
+	margin-top: 50px;
+	float: left;
+}
+
+#college a , #school a {
+	-webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;   
+	font-family: Quicksand;
+	font-size: 35px;
+    border-radius: 50%;
+    padding-top: 35%;
+    padding-bottom: 35%;
+    padding-right: 10%;
+    padding-left: 10%;
+    color:  grey;
+    text-decoration: none;
+}
+ 
+#college a:hover , #school a:hover {
+	-webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+	color: red;
+	text-decoration: none;
+}
+
+#school{
+	display: block;
+	margin-left: : 0px;
+	margin-right: 0px;
+	padding-right: 30%;
+	padding-left: 5%;
+	margin-top: 50px;
+	float: right;
+}
+
+.tab {
+    height: auto;
+    width: auto;
+    overflow: auto;
+    display: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 100px;
+    border-bottom: 2px solid grey;
+}
+
+.tab a {
+	color: darkgrey;
+	text-decoration: none;
+}
+
+.tab a:hover {
+	-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+	color: red;
+	text-decoration: none;
+}
+
+#tab1 dl {
+	width: 100%;
+	display: block;
+}
+
+#tab1 > ul > li {
+	text-decoration: none;
+	list-style: none;
+	width: 33%;
+	display: block;
+	float: left;
+	text-align: center;
+	font-family: Quicksand;
+	font-size: 30px;
+}
+
+.subtab {
+    display: block ;
+    margin-top: 100px;
+    width: 100% !important;
+}
+
+.subtab dl {
+	width: 25% !important;
+	display: block !important;
+	float: left !important;
+}
+
+.subtab li {
+	clear: both;
+	list-style: none !important;
+	font-family: Quicksand;
+	font-size: 20px !important;
+}
+
+#subtab1 li , #subtab1 h1 {
+	text-align: center;
+}
+
+#subtab2 li , #subtab2 h1 {
+	text-align: center;
+}
+
+#subtab3 li , #subtab3 h1 {
+	text-align: center;
+}
+
+li.a.active {
+	color: black;
+}
+
+@-webkit-keyframes rainbow {
+  0% {border-color: hsl(0, 100%, 50%);
+  	border-radius: 50%;}
+  100% {border-color: hsl(255, 100%, 50%);
+  border-radius: 50%;}
+}
+
+.rainbow_border{
+  border: 2px solid hsl(0, 100%, 50%);
+  -webkit-animation: rainbow 1s infinite alternate;
+}
+
+#form {
+	width  : 35%;
+	height : 498px;
+	margin : 0 auto;
+	background: #F8F8f8;
+	margin-top: 100px !important;
+}
+
+#name {
+	position: relative;
+	display: block;
+}
+
+#contact {
+	position: relative;
+	display: block;
+}
+
+#email {
+	position: relative;
+	display: block;
+}
+
+#suggestions {
+	position: relative;
+	display: block;
+}
+
+#subscribe {
+	display: block;
+	padding-left:25%;
+	padding-right: 25%;
+}
+
+form label {
+	width: 20%;
+	float: left;
+}
+
+textarea {
+  display : block;
+  padding : 10px;
+  margin  : 10px 0 0 -10px;
+  width   : 340px;
+  height  : 360px;
+  resize  : none;
+  overflow: auto;
+}
+
+button {
+	padding      : 5px;
+	font         : bold .6em sans-serif;
+	border       : 2px solid #333;
+	border-radius: 5px;
+	background   : #f1f1f1;
+	cursor       : pointer;
+
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+button:hover {
+	padding      : 8px;
+    border-radius: 7px;
+    background   : grey;
+}
+
+button:after {
+  content: "+";
+}
+
+label {
+	font-family: Quicksand;
+}
+
+input:focus, textarea:focus {
+  background   : rgba(0,0,0,.1);
+  border-radius: 5px;
+  outline      : none;
+}
+
+input {
+    height: 2.5em; /* for IE */
+    vertical-align: middle; /* This is optional but it makes legacy IEs look better */
+}
