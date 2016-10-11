@@ -271,9 +271,9 @@ li.a.active {
 	height : 498px;
 	margin : 0 auto;
 	background: #F8F8f8;
-	margin-top: 50px !important;
+	margin-top: 20px !important;
 	clear: both;
-	display: none;
+	display: block;
 }
 
 #name {
