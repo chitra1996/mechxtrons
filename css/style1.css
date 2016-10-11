@@ -1,0 +1,149 @@
+header , nav , aside , section , article , footer {
+    display: block;
+}
+
+.wrapper {
+	width: 100% !important;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+#header {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+
+#header #title {
+	font-size: 80px;
+	font-family: Quicksand;
+	color: #07273a;
+	margin-top: 20px !important;
+	margin-bottom: 0px !important;
+	font-weight: normal;
+}
+
+#header #subtitle {
+	font-size: 40px;
+	font-family: Quicksand;
+	color: #133f59;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	font-weight: normal;
+}
+
+#content {
+	margin-top: 50px;
+}
+
+#college {
+	display: block;
+	margin-left: : 0px;
+	margin-right: 0px; 
+	padding-right: 5%;
+	padding-left: 25%;
+	float: left;
+}
+
+#college a , #school a {
+	-webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+#college a:hover , #school a:hover {
+	-webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+}
+
+#school{
+	display: block;
+	margin-left: : 0px;
+	margin-right: 0px;
+	padding-right: 25%;
+	padding-left: 5%;
+	float: right;
+}
+
+.tab {
+    height: auto;
+    width: auto;
+    overflow: auto;
+    display: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#tab1 dl {
+	width: 100%;
+	display: block;
+	margin-bottom: 0px !important;
+	margin-top: 20px !important;
+}
+
+#tab1 li {
+	text-decoration: none;
+	list-style: none;
+	width: 33%;
+	display: block;
+	float: left;
+	text-align: center;
+	font-family: Quicksand;
+	font-size: 30px;
+}
+
+.subtab {
+    height: auto;
+    width: auto;
+    overflow: auto;
+    display: block ;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.subtab li {
+	list-style: none;
+	font-family: Quicksand;
+	font-size: 30px;
+}
+
+.subtab .suboptions {
+	width: 24%;
+	float: left;
+	text-align: left;
+	border-right: 1px solid red;
+	margin-right: 15px;
+	height: 100%;
+}
+
+#option1 h1 {
+	font-family: Oswald;
+	font-size: 40px;
+	color: blue;
+}
+
+#option2 h1 {
+	font-family: Oswald;
+	font-size: 40px;
+	color: red;
+}
+
+#option3 h1 {
+	font-family: Oswald;
+	font-size: 40px;
+	color: orangered;
+}
+
+#option4 h1 {
+	font-family: Oswald;
+	font-size: 40px;
+	color: green;
+}
+
+li.a.active {
+	color: black;
+}
