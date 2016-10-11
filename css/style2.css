@@ -3,7 +3,9 @@ header , nav , aside , section , article , footer {
 }
 
 .wrapper {
-	width: 100% !important;
+	width: 80% !important;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .row {
